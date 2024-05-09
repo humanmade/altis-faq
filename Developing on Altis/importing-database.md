@@ -1,6 +1,8 @@
 # How do I import an external database into an Altis environment?
 
-To import an external database dump into an Altis environment, the process will depend on how large the dump is you wish to import. For large database dumps (>10GB), [contact Altis support](https://docs.altis-dxp.com/guides/getting-help-with-altis/), and we will import the database on your behalf. To import smaller databases, you'll predominately use the [CLI via Altis Dashboard](https://docs.altis-dxp.com/cloud/dashboard/cli/). 
+To import an external database dump into an Altis environment, the process will depend on how large the dump is you wish to import. For large database dumps (>=10GB), [contact Altis support](https://docs.altis-dxp.com/guides/getting-help-with-altis/), and we will import the database on your behalf. To import smaller databases, you'll predominately use the [CLI via Altis Dashboard](https://docs.altis-dxp.com/cloud/dashboard/cli/). 
+
+Note: The Sandbox has a maximum 10GB of disk space available mounted to `/usr/src/app/`.
 
 ## Copying the dump to the Sandbox
 
@@ -18,7 +20,7 @@ Note: the sandbox storage is non-permanent and may be cleared if the underlying 
 
 Now the dump exists in the Sandbox, you can run operations. The most [direct method of importing](https://developer.wordpress.org/cli/commands/db/import/) Databases for your WordPress website, is to use `wp db import mysqldump.sql`. 
 
-Note: Depending on the size of your database, this might take a while, so it's best to run this in a []`screen` session](https://techoverflow.net/2021/12/24/how-to-use-screen-sessions-in-linux/). Screen is preinstalled on the Sandbox. 
+Note: Depending on the size of your database, this might take a while, so it's best to run this in a [`screen` session](https://techoverflow.net/2021/12/24/how-to-use-screen-sessions-in-linux/). Screen is preinstalled on the Sandbox. 
 
 ## Search replace the database
 
@@ -26,7 +28,7 @@ When importing databases into non-production environments, a search-replace may 
 
 Use [`wp search-replace`](https://developer.wordpress.org/cli/commands/search-replace/) to update URLs from their original to your Altis domain. 
 
-E.G `wp search-replace example.com example-dev.altis.cloud --dry-run` - note the `--dry-run` flag, this is good practice prior to any search replace to review the replacements to be made. Also note the ommitance of any HTTP protocol in the URLs - search-replaces that include the protocol may break your database. 
+E.G `wp search-replace example.com example-dev.altis.cloud --dry-run` - note the `--dry-run` flag, this is good practice prior to any search replace to review the replacements to be made. Also note the omittance of any HTTP protocol in the URLs - if you run a search-replace that include the protocol, this may cause irreversible issues to the database, so it avoid using them.
 
 Finally, flush the object cache! Run `wp cache flush`. 
 
