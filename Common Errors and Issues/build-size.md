@@ -7,13 +7,13 @@ Error: The build image size (... MB) exceeds the maximum allowed size for your e
 
 ```
 
-Then your build image has gone over the build size limit, and must be brought down to below 640MB.
+Then your build image has exceeded the build size limit, and must be reduced to below 640MB.
 
 You can look at the following areas to reduce build size:
 
 - Add `--prefer-dist` to the composer install command
 - If you are building JS / CSS assets with tools installed via npm or yarn ensure you're removing `node_modules` afterwards.
-- Once the above is done, ensure you clear the build cache in Altis Dashboard before re-trying the deployment (contact support to clear the build cache)
+- Once the above is done, ensure you clear the build cache in the Altis Dashboard before re-trying the deployment (contact support to clear the build cache)
 
 
 In some cases, a large file may have been committed to your repository and is being deploy; so check your code repository for large files.

@@ -10,5 +10,8 @@ What is the default allowed list?
 
 Can this list be changed?
 
-WordPress allows you to add file types to the above list, to do this, go to the Network Admin of your site, then go to 'Settings'. Find the field for "Upload file types" and add the file types you wish to upload to the list.
-Once you save the settings, you'll be able to freely upload files with the newly added file extension.
+WordPress allows you to add file types to the above list. To do this, go to
+the Network Admin of your site, then go to 'Settings'. Find the field for
+"Upload file types". Add the file types you wish to upload to the list. Once 
+you save the settings, you'll be able to freely upload files with the
+newly added file extension.

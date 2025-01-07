@@ -1,6 +1,6 @@
 #  ElasticSearch Index: Error: An index is already occurring. Try again later. 
 
-It can be possible that when trying to perform a reindex the flag in-progress flag get stuck, resulting in the following error:
+It can be possible that when trying to perform a reindex the in-progress flag get stuck, resulting in the following error:
 ```
 Error: An index is already occurring. Try again later.
 ```
@@ -16,3 +16,6 @@ Occasionally this value can also be stored in the object cache, so flushing the 
 ```
 wp cache flush
 ```
+
+**Note that flushing the object cache can have a significant impact on 
+performance, so we recommend you only do this when necessary.** 
