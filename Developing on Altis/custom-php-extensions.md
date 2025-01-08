@@ -1,5 +1,5 @@
 # I want to implement a feature that requires a PHP Extension, can I install it?
 
-It's not possible to customise the PHP extension configuration.
+No. It's not possible to customise the PHP extension configuration. 
 
-Let us know that you're interested in a specific PHP extention, and tell us about your requirements and how you may use the extension. To request a feature, head on over to our roadmap, and submit your ideas - https://dashboard.altis-dxp.com/roadmap
+We are not accepting requests for PHP Extensions, however, let us know that you're interested in a specific PHP extention. Let us know tell us about your requirements and how you may use the extension. To request a feature, head on over to our roadmap, and submit your ideas - https://dashboard.altis-dxp.com/roadmap

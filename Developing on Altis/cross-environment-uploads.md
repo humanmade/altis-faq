@@ -1,5 +1,5 @@
-#  Using Production or Non-Production uploads in Local-server 
+#  Can I load Production or Non-Production upload assets directly in Local-server?
 
-While developing an Altis project in Altis Local Server, you maybe tempted to load upload assets from Production or Non-Production Altis Environments directly. This would save time in downloading assets locally.
+Yes, but isn't recommended.
 
-This is generally not recommended. While possible, This requires advanced knowledge on NGINX and may cause undesired effects for your local environment.
+While developing an Altis project in Altis Local Server, you maybe tempted to load upload assets from Production or Non-Production Altis Environments directly. This would save time, as you won't have to download assets locally. However, doing so is not recommended for most project. While technically possible, this requires advanced knowledge on NGINX and may cause undesired effects for your local environment. 
