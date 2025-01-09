@@ -1,7 +1,5 @@
 #  Uploading files displays 'cannot upload this file type' 
 
-
-
 The default WordPress behaviour will only allow files of specified file-types to be uploaded. If a file is uploaded that is not in the list of permitted file types, WordPress will display the error 'Sorry, you are not allowed to upload this file type'.
 
 What is the default allowed list?
