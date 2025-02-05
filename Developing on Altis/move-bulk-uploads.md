@@ -17,9 +17,10 @@ $ aws s3 ls s3://copied-uploads-bucket-path/
 ```
 
 This should return a list of directories you have access to.
-Operations
 
-The most common operations are `$ aws s3 cp *src dest*` and `$ aws s3 sync *src dest*.` They can be used larg
+## Operations
+
+The most common operations are `$ aws s3 cp *src dest*` and `$ aws s3 sync *src dest*.`.
 
 The `cp` command copies objects from the source directory to the destination.
 
@@ -28,7 +29,8 @@ The `sync` command copies any missing objects from the source to the destination
 For more advanced operations, see the AWS CLI documentation:
 
 https://docs.aws.amazon.com/cli/latest/reference/s3/#single-local-file-and-s3-object-operations
-Example
+
+## Example
 
 A common use case is a change of sub-site ID, so you want to copy the uploads from `uploads/sites/10/` to `uploads/sites/11/`
 
